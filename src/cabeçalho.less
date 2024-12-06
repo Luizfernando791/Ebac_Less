@@ -1,0 +1,29 @@
+@import "../variaveis";
+@import "../mixins";
+@import "../escapings";
+
+header {
+    background-color: @header-bg-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    .container {
+        .align-center();
+        justify-content: space-between;
+        padding: @padding-header 0;
+    }
+
+    .menu {
+        display: flex;
+
+        li {
+            .escape();
+            margin-left: 24px;
+
+            a {
+                .text-style(#fff, bold);
+            }
+        }
+    }
+}

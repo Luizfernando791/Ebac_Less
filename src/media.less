@@ -1,0 +1,22 @@
+@import "../maps";
+
+.container {
+    .media-query('large') {
+        max-width: 80%;
+    }
+}
+
+.products {
+    .media-query('large') {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+
+    .media-query('medium') {
+        display: block;
+
+        .product-item {
+            margin-bottom: 32px;
+        }
+    }
+}

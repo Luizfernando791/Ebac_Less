@@ -1,0 +1,10 @@
+@media-map: {
+    'large': 1023px;
+    'medium': 767px;
+};
+
+.media-query(@screen) {
+    @media screen and (max-width: extract(@media-map, @screen)) {
+        @arguments();
+    }
+}
